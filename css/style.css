@@ -11,6 +11,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background-size: cover;
 }
 
 html {
@@ -86,9 +90,9 @@ html {
 #bg-hero-svg {
   position: fixed; /* Reste centré même en scrollant */
   z-index: -2;
-  -webkit-filter: blur(2rem);
+  -webkit-filter: blur(1.5rem);
   filter: blur(2rem); /* Simplifié */
-  fill: rgba(194, 59, 6, 0.4);
+  fill: rgba(194, 59, 6, 0.3);
   transition: filter 0.3s ease-in-out; /* Limité au filtre */
   top: 50%;
   left: 50%;
@@ -99,9 +103,9 @@ html {
 #bg-hero-svg-blue {
   position: fixed; /* Reste centré même en scrollant */
   z-index: -2;
-  -webkit-filter: blur(2rem);
+  -webkit-filter: blur(1.5rem);
   filter: blur(2rem); /* Simplifié */
-  fill: rgba(6, 109, 194, 0.4);
+  fill: rgba(6, 109, 194, 0.3);
   transition: filter 0.3s ease-in-out; /* Limité au filtre */
   top: 50%;
   left: 50%;
