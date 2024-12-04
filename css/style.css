@@ -26,7 +26,7 @@ html {
   height: 100%;
   background: url("../asset/bg.png");
   background-size: 100vw;
-  opacity: 0.25;
+  opacity: 0.4;
   z-index: -3;
 }
 
@@ -44,7 +44,8 @@ html {
 
 .card {
   position: relative;
-  height: 100vh;
+  display: none;
+  min-height: 100vh;
 }
 
 .top-left {
@@ -71,8 +72,8 @@ html {
 #bg-hero-svg {
   position: absolute;
   z-index: -2;
-  -webkit-filter: blur(2rem);
-  filter: blur(2rem);
+  -webkit-filter: blur(1.5rem);
+  filter: blur(1.5rem);
   fill: rgba(194, 59, 6, 0.3);
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -85,8 +86,8 @@ html {
 #bg-hero-svg-blue {
   position: absolute;
   z-index: -2;
-  -webkit-filter: blur(2rem);
-  filter: blur(2rem);
+  -webkit-filter: blur(1.5rem);
+  filter: blur(1.5rem);
   fill: rgba(6, 109, 194, 0.5);
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -100,10 +101,10 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
   flex-direction: column;
   padding: 60px 10px;
   gap: 50px;
+  width: 100%;
 }
 
 .container .top h1 {
