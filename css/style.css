@@ -70,34 +70,44 @@ html {
   color: #03bf62;
 }
 
-#bg-hero-svg {
+/* #bg-hero-svg {
   position: absolute;
   z-index: -2;
   -webkit-filter: blur(1.5rem);
   filter: blur(1.5rem);
   fill: rgba(194, 59, 6, 0.5);
   transition: all 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+} */
+
+#bg-hero-svg {
+  position: fixed; /* Reste centré même en scrollant */
+  z-index: -2;
+  -webkit-filter: blur(2rem);
+  filter: blur(2rem); /* Simplifié */
+  fill: rgba(194, 59, 6, 0.4);
+  transition: filter 0.3s ease-in-out; /* Limité au filtre */
+  top: 50%;
+  left: 50%;
+  overflow: visible;
+  height: 80vh;
 }
 
 #bg-hero-svg-blue {
-  position: absolute;
+  position: fixed; /* Reste centré même en scrollant */
   z-index: -2;
-  -webkit-filter: blur(1.5rem);
-  filter: blur(1.5rem);
-  fill: rgba(6, 109, 194, 0.5);
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
+  -webkit-filter: blur(2rem);
+  filter: blur(2rem); /* Simplifié */
+  fill: rgba(6, 109, 194, 0.4);
+  transition: filter 0.3s ease-in-out; /* Limité au filtre */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  overflow: visible;
+  height: 80vh;
 }
-
 .container {
   display: flex;
   justify-content: space-evenly;
